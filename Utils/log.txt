@@ -1,0 +1,11 @@
+--08:22:25--  http://activegrid-lax.xfernet.net/version.json
+           => `version.json.5'
+Resolving activegrid-lax.xfernet.net... 67.43.162.18
+Connecting to activegrid-lax.xfernet.net|67.43.162.18|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://activegrid-lax.xfernet.net/version.json [following]
+--08:22:26--  https://activegrid-lax.xfernet.net/version.json
+           => `version.json.5'
+Connecting to activegrid-lax.xfernet.net|67.43.162.18|:443... connected.
+OpenSSL: error:14094410:SSL routines:SSL3_READ_BYTES:sslv3 alert handshake failure
+Unable to establish SSL connection.

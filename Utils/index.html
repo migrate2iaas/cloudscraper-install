@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content='text/html; charset=utf-8' http-equiv='Content-type'>
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="BVdNSC4bhQfmVXc56uC4ceS/6FoldTHIrUhsX7rVbaI=" name="csrf-token" />
+<link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<title>
+ActiveGrid by Xfernet &#8250; 
+</title>
+<link href="/assets/themes/dark-bb7be61c919d2d400e4191735d99cfa7.css" media="all" rel="stylesheet" type="text/css" />
+<script src="/assets/application-fd959bacd28a6409a6dfd9055d17d908.js" type="text/javascript"></script>
+<link href="/themes/b70e89ced08648b64b5bbbbb3e64c9b9.css" media="screen" rel="stylesheet" type="text/css" />
+<script>
+  //<![CDATA[
+    document.ajax_pagination_update_time = 9000;
+    document.ajax_power_update_time = 8000;
+    document.file_default_text = 'No file selected';
+    document.file_button_text = 'Choose File';
+    document.fancybox_close = 'Close';
+    window.currency = new OnApp.Currency({"code":"USD","delimiter":",","format":"%u%n","precision_for_unit":8,"separator":".","unit":"$"})
+  //]]>
+</script>
+
+
+</head>
+<body class='bp'>
+<div class='container' id='container'>
+
+<div class='container_wrapper'>
+<div class='wrapper'>
+<div class='sidepanel' id='sidebar'>
+<div class='logo'><a href="/"><img alt="Logo" src="/themes/b70e89ced08648b64b5bbbbb3e64c9b9/logo-b5263e4288c96f221183187693e10f3a.png" title="Powered by Xfernet ActiveGrid" /></a>
+</div>
+<nav>
+<div class='sidebar_group'>
+<ul><li class="dashboard selected active" data-tooltip="Dashboard"><a href="/" class="selected"><span class="icon">Dashboard</span></a></li></ul>
+</div>
+<div class='sidebar_group'>
+<h3>Appliances</h3>
+<ul><li class="virtual_machines" counter="1" data-tooltip="Virtual Servers"><a href="/virtual_machines"><span class="icon">Virtual Servers</span><span class="count">1</span></a></li><li class="hypervisors" data-tooltip="Hypervisors"><a href="/hypervisors" class="nav_arrow icon"><span class="icon">Hypervisors</span></a><ul><li class="hypervisors" data-tooltip="All Hypervisors"><a href="/hypervisors"><span class="icon">All Hypervisors</span></a></li><li class="group" data-tooltip="LAX01.1.1.6"><a href="#" class="nav_arrow icon"><span>LAX01.1.1.6</span></a><ul><li class="hypervisor" data-tooltip="HV11E9"><a href="/hypervisors/3"><span class="icon">HV11E9</span></a></li><li class="hypervisor" data-tooltip="HV14D4"><a href="/hypervisors/4"><span class="icon">HV14D4</span></a></li><li class="hypervisor" data-tooltip="HV43BB"><a href="/hypervisors/9"><span class="icon">HV43BB</span></a></li><li class="hypervisor" data-tooltip="HV7993"><a href="/hypervisors/10"><span class="icon">HV7993</span></a></li><li class="hypervisor" data-tooltip="HVBD41"><a href="/hypervisors/12"><span class="icon">HVBD41</span></a></li><li class="hypervisor" data-tooltip="HV4165"><a href="/hypervisors/13"><span class="icon">HV4165</span></a></li><li class="hypervisor" data-tooltip="HV6BE3"><a href="/hypervisors/14"><span class="icon">HV6BE3</span></a></li><li class="hypervisor" data-tooltip="HV702A"><a href="/hypervisors/15"><span class="icon">HV702A</span></a></li></ul></li></ul></li><li class="hypervisors" data-tooltip="Assets"><a href="/hypervisors/not_grouped"><span class="icon">Assets</span></a></li></ul>
+</div>
+<div class='sidebar_group'>
+<h3>Components</h3>
+<ul><li class="templates" data-tooltip="Templates"><a href="/templates" class="nav_arrow icon"><span class="icon">Templates</span></a><ul><li class="template_list" counter="34" data-tooltip="Template List"><a href="/templates"><span class="icon">Template List</span><span class="count">34</span></a></li></ul></li><li class="blueprints" data-tooltip="Blueprints"><a href="#" class="nav_arrow icon"><span class="icon">Blueprints</span></a><ul><li class="blueprint_templates" counter="0" data-tooltip="Blueprint Templates"><a href="/blueprint_templates"><span class="icon">Blueprint Templates</span><span class="count">0</span></a></li></ul></li></ul>
+</div>
+<div class='sidebar_group'>
+<h3>Users</h3>
+<ul><li class="roles" counter="1" data-tooltip="Roles and Sets"><a href="/roles"><span class="icon">Roles and Sets</span><span class="count">1</span></a></li></ul>
+</div>
+<div class='powered'>
+Powered by
+<a href="http://www.xfernet.net" title="Xfernet ActiveGrid | cloud software for hosts">ActiveGrid</a>
+</div>
+
+</nav>
+
+</div>
+<div class='mainpanel'>
+<div class='header' id='header'>
+<div class='nav'><a class='icon sdbr-l' id='tggl-sdbr'></a>
+<div class='account'>
+<div class='actions greentask header-drop-down'>
+<a class='tasksy'>
+Migrate2Iaas Support
+</a>
+<div class='taskymenu nav-items'>
+<ul>
+<li><a href="/profile" title="My Profile">My Profile</a></li>
+<li><a href="/users/sign_out" data-method="DELETE" rel="nofollow">Log Out</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class='actions greentask build-menu header-drop-down'>
+<a class='tasksy'>
+Build
+</a>
+<div class='taskymenu nav-items'>
+<ul>
+<li><a href="/virtual_machines/new" class="icon add">Add New Virtual Server</a></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id='internal_container'>
+
+
+
+<div>
+
+</div>
+<script id='dashboard_virtual_machine_tooltip' type='javascript/template'>
+<span class='triangle'>
+<span></span>
+</span>
+<div class='column span-11 first'>
+<div class='os-logo __os-logo__'></div>
+<h3 class='template-version'><%= label %></h3>
+<center>
+<% if(type !== 'BaremetalServer') { %>
+<ul class='mini-controls power'>
+<% if(type === 'SmartServer') { %>
+<li class='green'>
+<a href="/smart_servers/<%= identifier %>/startup" class="play power icon" data-method="post" rel="nofollow">ON</a>
+</li>
+<li class='red'>
+<a href="/smart_servers/<%= identifier %>/powering" class="stop power icon" rel="facebox">OFF</a>
+</li>
+<li class='blue'>
+<a href="/smart_servers/<%= identifier %>/reboot" class="reboot icon" data-method="post" rel="nofollow">REBOOT</a>
+</li>
+<% } else { %>
+<li class='green'>
+<a href="/virtual_machines/<%= identifier %>/startup" class="play power icon" data-method="post" rel="nofollow">ON</a>
+</li>
+<li class='red'>
+<a href="/virtual_machines/<%= identifier %>/powering" class="stop power icon" rel="facebox">OFF</a>
+</li>
+<li class='blue'>
+<a href="/virtual_machines/<%= identifier %>/reboot" class="reboot icon" data-method="post" rel="nofollow">REBOOT</a>
+</li>
+<% } %>
+</ul>
+<% } %>
+</center>
+</div>
+<div class='column span-13 last'>
+<div class='vm-specs'>
+<% if(type !== 'BaremetalServer') { %>
+<dl>
+<dd>
+<label>Memory</label>
+</dd>
+<dt><%= ram %></dt>
+</dl>
+<dl>
+<dd>
+<label>Network Speed</label>
+</dd>
+<dt><%= network_speed %></dt>
+</dl>
+<dl>
+<dd>
+<label>CPU(s)</label>
+</dd>
+<dt><%= cpus %></dt>
+</dl>
+<% } %>
+<dl>
+<dd>
+<label>Primary IP Address</label>
+</dd>
+<dt><%= ip_address %></dt>
+</dl>
+<% if(type !== 'BaremetalServer') { %>
+<dl>
+<dd>
+<label>Disk Size</label>
+</dd>
+<dt><%= storage %></dt>
+</dl>
+<dl>
+<dd>
+<label>Bandwidth</label>
+</dd>
+<dt><%= bandwidth %></dt>
+</dl>
+<dl>
+<dd>
+<label>Disk backups</label>
+</dd>
+<dt><%= backups %></dt>
+</dl>
+<% } %>
+</div>
+</div>
+</script>
+
+<div class='dashboard block'>
+<div class='details span-16'>
+<div class='details-wrap'><div class='detail-item first user'>
+<h1>CPU</h1>
+<div class='status-bar'>
+<div class="usage grey" data-virtual_machine="{&quot;type&quot;:null,&quot;identifier&quot;:&quot;yvkv5zmvdnp9hx&quot;,&quot;booted&quot;:false,&quot;label&quot;:&quot;WIN-CANE5VV7AS8_2015_04_23__C&quot;,&quot;operating_system&quot;:&quot;windows&quot;,&quot;ram&quot;:&quot;&lt;span&gt;2&lt;/span&gt; &lt;span&gt;GB&lt;/span&gt;&quot;,&quot;cpus&quot;:&quot;1 CPU&quot;,&quot;cpu_shares&quot;:&quot;1%&quot;,&quot;storage&quot;:&quot;&lt;span&gt;160&lt;/span&gt; &lt;span&gt;GB&lt;/span&gt;&quot;,&quot;backups&quot;:&quot;&lt;span&gt;0/0&lt;/span&gt; &lt;span&gt;B&lt;/span&gt;&quot;,&quot;network_speed&quot;:&quot;Unlimited&quot;,&quot;ip_address&quot;:&quot;72.34.251.4&quot;,&quot;bandwidth&quot;:&quot;0 B&quot;}" style="left:0%;right:0%;background-color:#c8dcab"></div>
+</div>
+<div class='key'>
+<div class='mini usage' style='visibility:hidden;'></div>
+<p class='bold'>Total</p>
+<p class='value'><span>1 </span><span>Core</span></p>
+</div>
+</div>
+<div class='detail-item second user'>
+<h1>Memory</h1>
+<div class='status-bar'>
+<div class="usage grey" data-virtual_machine="{&quot;type&quot;:null,&quot;identifier&quot;:&quot;yvkv5zmvdnp9hx&quot;,&quot;booted&quot;:false,&quot;label&quot;:&quot;WIN-CANE5VV7AS8_2015_04_23__C&quot;,&quot;operating_system&quot;:&quot;windows&quot;,&quot;ram&quot;:&quot;&lt;span&gt;2&lt;/span&gt; &lt;span&gt;GB&lt;/span&gt;&quot;,&quot;cpus&quot;:&quot;1 CPU&quot;,&quot;cpu_shares&quot;:&quot;1%&quot;,&quot;storage&quot;:&quot;&lt;span&gt;160&lt;/span&gt; &lt;span&gt;GB&lt;/span&gt;&quot;,&quot;backups&quot;:&quot;&lt;span&gt;0/0&lt;/span&gt; &lt;span&gt;B&lt;/span&gt;&quot;,&quot;network_speed&quot;:&quot;Unlimited&quot;,&quot;ip_address&quot;:&quot;72.34.251.4&quot;,&quot;bandwidth&quot;:&quot;0 B&quot;}" style="left:0%;right:0%;background-color:#c8dcab"></div>
+</div>
+<div class='key'>
+<div class='mini usage' style='visibility:hidden;'></div>
+<p class='bold'>Total</p>
+<p class='value'><span>2</span> <span>GB</span></p>
+</div>
+</div>
+<div class='detail-item first user'>
+<h1>Storage</h1>
+<div class='status-bar'>
+<div class="usage grey" data-virtual_machine="{&quot;type&quot;:null,&quot;identifier&quot;:&quot;yvkv5zmvdnp9hx&quot;,&quot;booted&quot;:false,&quot;label&quot;:&quot;WIN-CANE5VV7AS8_2015_04_23__C&quot;,&quot;operating_system&quot;:&quot;windows&quot;,&quot;ram&quot;:&quot;&lt;span&gt;2&lt;/span&gt; &lt;span&gt;GB&lt;/span&gt;&quot;,&quot;cpus&quot;:&quot;1 CPU&quot;,&quot;cpu_shares&quot;:&quot;1%&quot;,&quot;storage&quot;:&quot;&lt;span&gt;160&lt;/span&gt; &lt;span&gt;GB&lt;/span&gt;&quot;,&quot;backups&quot;:&quot;&lt;span&gt;0/0&lt;/span&gt; &lt;span&gt;B&lt;/span&gt;&quot;,&quot;network_speed&quot;:&quot;Unlimited&quot;,&quot;ip_address&quot;:&quot;72.34.251.4&quot;,&quot;bandwidth&quot;:&quot;0 B&quot;}" style="left:0%;right:0%;background-color:#c8dcab"></div>
+</div>
+<div class='key'>
+<div class='mini usage' style='visibility:hidden;'></div>
+<p class='bold'>Total</p>
+<p class='value'><span>160</span> <span>GB</span></p>
+</div>
+</div>
+<div class='detail-item second user'>
+<h1>IOPS /h</h1>
+<div class='iops'>
+<div class='status-bar'>
+<div class="usage grey" data-virtual_machine="{&quot;type&quot;:null,&quot;identifier&quot;:&quot;yvkv5zmvdnp9hx&quot;,&quot;booted&quot;:false,&quot;label&quot;:&quot;WIN-CANE5VV7AS8_2015_04_23__C&quot;,&quot;operating_system&quot;:&quot;windows&quot;,&quot;ram&quot;:&quot;&lt;span&gt;2&lt;/span&gt; &lt;span&gt;GB&lt;/span&gt;&quot;,&quot;cpus&quot;:&quot;1 CPU&quot;,&quot;cpu_shares&quot;:&quot;1%&quot;,&quot;storage&quot;:&quot;&lt;span&gt;160&lt;/span&gt; &lt;span&gt;GB&lt;/span&gt;&quot;,&quot;backups&quot;:&quot;&lt;span&gt;0/0&lt;/span&gt; &lt;span&gt;B&lt;/span&gt;&quot;,&quot;network_speed&quot;:&quot;Unlimited&quot;,&quot;ip_address&quot;:&quot;72.34.251.4&quot;,&quot;bandwidth&quot;:&quot;0 B&quot;}" style="left:0%;right:0%;background-color:#c8dcab"></div>
+</div>
+<div class='key'>
+<div class='mini usage' style='visibility:hidden;'></div>
+<p class='bold'>In</p>
+<p class='value'>0</p>
+</div>
+</div>
+<div class='iops'>
+<div class='status-bar read-iops'>
+<div class="usage grey" data-virtual_machine="{&quot;type&quot;:null,&quot;identifier&quot;:&quot;yvkv5zmvdnp9hx&quot;,&quot;booted&quot;:false,&quot;label&quot;:&quot;WIN-CANE5VV7AS8_2015_04_23__C&quot;,&quot;operating_system&quot;:&quot;windows&quot;,&quot;ram&quot;:&quot;&lt;span&gt;2&lt;/span&gt; &lt;span&gt;GB&lt;/span&gt;&quot;,&quot;cpus&quot;:&quot;1 CPU&quot;,&quot;cpu_shares&quot;:&quot;1%&quot;,&quot;storage&quot;:&quot;&lt;span&gt;160&lt;/span&gt; &lt;span&gt;GB&lt;/span&gt;&quot;,&quot;backups&quot;:&quot;&lt;span&gt;0/0&lt;/span&gt; &lt;span&gt;B&lt;/span&gt;&quot;,&quot;network_speed&quot;:&quot;Unlimited&quot;,&quot;ip_address&quot;:&quot;72.34.251.4&quot;,&quot;bandwidth&quot;:&quot;0 B&quot;}" style="left:0%;right:0%;background-color:#c8dcab"></div>
+</div>
+<div class='key'>
+<div class='mini usage' style='visibility:hidden;'></div>
+<p class='bold'>Out</p>
+<p class='value'>0</p>
+</div>
+</div>
+</div>
+<script>
+  //<![CDATA[
+    new OnApp.Dashboard.Tooltip
+  //]]>
+</script>
+</div>
+</div>
+<div class='dial span-8 last'>
+<div class='dial-base statistics'>
+<div class='dial-tip'>
+<div class='dial-sel'>
+<ul>
+<li class='usage'>
+<a href="/dashboard/part/cloud" title="Cloud">Cloud</a>
+</li>
+<li class='statistics'>
+<a href="/dashboard/part/statistics" title="Statistics">Statistics</a>
+</li>
+<li class='account'>
+<a href="/dashboard/part/account" title="Account">Account</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='load' id='paginated'>
+<div class='section_header'>
+<div class='buttonset right logs_filters'>
+<input class="activity_filter" data-previous-value="false" id="filter_type_complete" name="filter_type" type="radio" value="complete" />
+<label class="icon complete" for="filter_type_complete">complete</label>
+<input class="activity_filter" data-previous-value="false" id="filter_type_running" name="filter_type" type="radio" value="running" />
+<label class="icon running" for="filter_type_running">running</label>
+<input class="activity_filter" data-previous-value="false" id="filter_type_failed" name="filter_type" type="radio" value="failed" />
+<label class="icon failed" for="filter_type_failed">failed</label>
+
+</div>
+<h2>Activity Log</h2>
+</div>
+<div class="no_content"><p>No log items found</p></div><input id="url_for_update" name="url_for_update" type="hidden" value="/dashboard/part/logs" />
+
+<script>
+  //<![CDATA[
+    new OnApp.Logs.Filter;
+  //]]>
+</script>
+
+</div>
+
+
+</div>
+</div>
+</div>
+<div class='footer' id='footer'></div>
+</div>
+
+</div>
+</body>
+</html>

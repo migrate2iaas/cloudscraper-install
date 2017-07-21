@@ -1,0 +1,10 @@
+datastore = 1
+port = 80
+minipad_template = 84
+vm_build_timeout = 10000
+s3bucket=migrate2iaas
+s3user=AKIAJGINXPAD2LPFL5TA
+s3secret=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
+s3region=eu-west-1
+wintemplate_size=30
+

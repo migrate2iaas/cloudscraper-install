@@ -1,0 +1,99 @@
+---------------------------------------------------------------
+----------------------------------------------------------------
+1. PREREQUISITES:
+----------------------------------------------------------------
+1.1 OS:
+
+1.1.1 Linux: 
+
+1.1.1.1 RHEL based:
+CentOS, Fedora, Oracle Linux, RHEL 
+
+1.1.1.2 Debian based:
+Ubuntu 
+
+1.1.2 Windows:
+
+1.2. 
+Windows Server 2003, Windows Server 2008, Windows Server 2008R2, Windows Server 2012, Windows Server 2012R2
+
+---------------------------------------------------------------
+1.2 Clouds:
+
+1.2.1 AWS 
+
+AWS support following Linux distros:
+Red Hat Enterprise Linux 5.1 - 6.5
+Centos 5.1 - 6.5
+Ubuntu 12.04, 12.10, 13.04, 13.10
+Debian 6.0.0 - 6.0.8, 7.0.0 - 7.2.0
+
+---------------------------------------------------------------
+1.3 Software 
+
+Linux
+
+1.3.1 wget
+
+Windows
+
+None
+
+---------------------------------------------------------------
+1.4 System Resources 
+1.4.1 (Linux) Drive other than /dev/sda posessing enough space to keep the image
+
+TODO: add networking requirements (firewalls, internet access, etc)
+
+---------------------------------------------------------------
+---------------------------------------------------------------
+2.a INSTALLATION (Linux):
+---------------------------------------------------------------
+2.a.1 wget http://subversion.assembla.com/svn/cloudscraper.install/trunk/tests/jenkins_auto/linux/install.sh
+---------------------------------------------------------------
+2.a.2 chmod +x install.sh
+---------------------------------------------------------------
+2.a,3 sudo ./install.sh
+2.a.3.1 Confirm installation of new packages by entering 'y'
+2.a.3.2 Enter your migration panel login and password 
+
+The following output means the Linux server has successfully connected to the migration panel
+Aug 28, 2014 5:11:13 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connected
+
+---------------------------------------------------------------
+---------------------------------------------------------------
+2.b. INSTALLATION (Windows):
+---------------------------------------------------------------
+2.b.1 Download https://subversion.assembla.com/svn/cloudscraper.install/trunk/tests/jenkins_auto/jenkins_auto.exe
+---------------------------------------------------------------
+2.b.2 Run jenkins_auto.exe , install
+
+TODO: how to troubleshoot Windows installation?
+
+---------------------------------------------------------------
+---------------------------------------------------------------
+3. MIGRATION:
+---------------------------------------------------------------
+3.1 Open your internet browser, navigate to http://panel-demo.migrate2iaas.com/
+3.2 Enter your migration panel login\password 
+3.3 Browse your possible migrations via task menu
+3.4 Run the task by clicking the run button to the left of task name (tasks are named in form <username>-<server-name>-migrate-Amazon, e.g.  testuser-Manual-Oracle-6-migrate-Amazon)
+3.5 Configure the migration
+3.5.1 Enter your AWS keys, select the appropriate region
+3.5.2 The path on the server to store the intermediate server image. NOTE: the path should point to the storage sufficient to store all your root drive data
+3.7 Leave "Volumes" field blank
+3.8 Click "Build"
+
+---------------------------------------------------------------
+4. KNOWN LIMITATIONS:
+---------------------------------------------------------------
+4.1 Only AWS cloud supported
+4.2 No VPC
+4.3 No security groups other than default
+4.4 There are no checks on sufficient space made
+
+---------------------------------------------------------------
+5. TROUBLESHOOTING:
+---------------------------------------------------------------
+4.1 Contact support@migrate2iaas.com adding "Cloudscraper-Pro-Beta:" prefix to the message topic

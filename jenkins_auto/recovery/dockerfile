@@ -1,0 +1,19 @@
+FROM ubuntu:latest
+# Download java 
+RUN apt-get -qq update
+RUN apt-get install curl -qq -y
+RUN apt-get install python -qq -y
+RUN apt-get install python-jenkinsapi -qq -y
+RUN curl -O http://subversion.assembla.com/svn/cloudscraper.install/trunk/tests/jenkins_auto/linux/jre/jre-8u45-linux-x64.tar.gz
+RUN mkdir -p /jre
+RUN tar -zxvf jre-8u45-linux-x64.tar.gz -C /jre --strip-components 1 
+
+# Dockerfile to be applied to standard Ubuntu docker image
+# it downloads and installs recovery agent to the image
+
+ENV Jenkins panel2.migrate2iaas.com
+ENV JenkinsSuffix /
+
+# downloading the latest agent script
+ENTRYPOINT curl http://subversion.assembla.com/svn/cloudscraper.install/trunk/tests/jenkins_auto/install_python.py  | python - --javapath /jre/bin --verbose --slavelabel Recovery --nojob --instcom "apt-get" --skipuser --suffix $JenkinsSuffix --maddr $Jenkins; while true; do echo ok waiting; sleep 1000; done;
+

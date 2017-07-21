@@ -1,0 +1,55 @@
+##CloudSigma
+##ElasticHost
+#DDC4Db9bu2g4WMJHkwdyL7yLA73Zy7nxwbMMSKEuUv 
+
+#Source
+#Target
+#Secret Key
+#testing
+#Specification  AWS,AZURE,CloudSigma,ElasticHost
+#Ignore below
+
+
+EH infor
+
+
+ UUID
+434b6010-6509-4b8e-ab7a-9bbfcacbeed8
+Secret API key
+C4Db9bu2g4WMJHkwdyL7yLA73Zy7nxwbMMSKEuUv
+
+AWS infor
+
+s3key = AKIAJU4UIPPAAHZDRDUQ
+Secret =
+QJcyeWgYVuA/8024X2gU6vlE6/DEFenVMhg6NowY
+
+
+
+[EC2]
+region = us-east-1
+instance-type = m1.small
+target-arch = x86_64
+s3key = AKIAJU4UIPPAAHZDRDUQ
+[Image]
+image-dir = C:\cloudscraper-images
+source-arch = x86_64
+image-type = RAW
+[Volumes]
+letters = D
+[D]
+
+
+
+[EC2]
+region = us-east-1
+instance-type = m1.small
+target-arch = x86_64
+s3key = AKIAJU4UIPPAAHZDRDUQ
+[Image]
+image-dir = C:\cloudscraper-images
+source-arch = x86_64
+image-type = VHD
+[Volumes]
+letters = C
+[C]

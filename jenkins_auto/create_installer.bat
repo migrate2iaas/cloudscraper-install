@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\WinRAR\rar" a -r0 -ibck -sfxDefaultEn.SFX -z"xfs.conf" -iicon"Cloud.ico" -iimg"C:\Users\user\Documents\logo5.bmp" cloudscraper_agent.exe

@@ -1,0 +1,13 @@
+endpoint=activegrid-lax.xfernet.net
+datastore = 8
+port = 443
+minipad_template = 30
+vm_build_timeout = 20000
+vm_boot_timeout = 960
+s3bucket=cloudscraper-migrate-bucket
+s3user=cloudscraper
+s3secret=2afa42b0c2c4b1131cd388cd1b9a7de7
+s3region = as01.xnetstor.com
+s3custom = True
+template_size_linux=5
+minipad_linux_template=107

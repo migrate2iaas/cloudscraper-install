@@ -1,0 +1,10 @@
+region = https://horizon.itnetworx.ch:5000/v2.0
+endpoint = https://horizon.itnetworx.ch:5000/v2.0
+swift_container = cloudscraper-storage
+swift_use_slo = True
+ignore_ssl_cert = True
+network = itx_lan
+ip_pool = lupfig_public1
+use_new_channel = True
+swift_max_segments = 10000000
+multithread_queue = True
