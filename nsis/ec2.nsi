@@ -92,7 +92,7 @@ section "install"
 	file /nonfatal AWSSDK.dll
 	file ICSharpCode.SharpZipLib.dll
 	file AssemblaAPI.dll
-	file migrate.cmd
+	file  /nonfatal migrate.cmd
 	file build
 	file revision-gui
 	file license.rtf
