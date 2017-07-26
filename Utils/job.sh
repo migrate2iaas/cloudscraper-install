@@ -18,11 +18,11 @@ cd ..
 
 echo ">>>> Updating Cloudscraper engine"
 
-wget -N http://migrate2iaas.blob.core.windows.net/cloudscraper-release6/${branch}/migrate.zip
+wget -N http://migrate2iaas.blob.core.windows.net/cloudscraper-build-result/${branch}/migrate.zip
 unzip -q -o migrate.zip
 
 rm -f lcns.msg
-wget http://subversion.assembla.com/svn/cloudscraper.install/trunk/licenses/lcns.msg
+wget http://migrate2iaas.blob.core.windows.net/cloudscraper-release6/lcns.msg
 
 mkdir -p ${ImageDirectory}
 mkdir -p logs

@@ -47,7 +47,7 @@ if "%PYTHONPATH%"=="" set PYTHONPATH=..\..\3rdparty\Python_2.7.10\python.exe
 if "%branch%"=="" set branch=master
 ECHO Testing branch %branch%
 
-set INSTALLER_DOWNLOAD_PATH=ftp://ftp.migrate2iaas.com/installer/%branch%/cloudscraper-installer.exe
+set INSTALLER_DOWNLOAD_PATH=http://migrate2iaas.blob.core.windows.net/cloudscraper-build-result/%branch%/cloudscraper-installer.exe
 set QUICK_UPDATE_PATH=ftp://ftp.migrate2iaas.com/compiled/%branch%/Migrate
 
 
@@ -116,6 +116,9 @@ REM  ##########  Downloading cloudscraper-installer.exe #######
 ECHO Downloading cloudscraper-installer.exe branch: %branch%
 "%PIPLELINE_DIR%\Tools\wget.exe" -N "%INSTALLER_DOWNLOAD_PATH%"
 
+REM ########### Download license  ###################
+wget http://migrate2iaas.blob.core.windows.net/cloudscraper-release6/lcns.msg
+
 REM ########## Saving updated installer changed date
 for %%a in (cloudscraper-installer.exe) do ( 
 set UpdFileDate=%%~ta
@@ -172,6 +175,10 @@ RMDIR /Q /S %IMAGE_PATH%
 REM  ##########  Get Transfer.ini from SVN location #######
 echo Copy %TARGET% INI
 copy "%PIPLELINE_DIR%\%INI_NAME%" "%HOME_DIR%"
+
+REM ########### Copy license ########
+
+copy "%PIPLELINE_DIR%\lcns.msg" "%HOME_DIR%"
 
 REM  ##########  Get OS Information and Target #######
 echo The %SOURCE% Source Server It is Running on
