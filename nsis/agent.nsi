@@ -74,7 +74,6 @@ section "install"
 	setOutPath $INSTDIR
 	# Files added here should be removed by the uninstaller (see section "uninstall")
 	file /r jre
-	file /r tools
 	file /r 3rdparty
 	file /r jenkins
 	file curl.exe
@@ -85,8 +84,6 @@ section "install"
 	file ncftpput.exe
 	file ssleay32.dll
 	file wget.exe
-	#file _install.bat
-	#file install.py
 	file new_install.bat
 	file install_python.py
 	file six.py
